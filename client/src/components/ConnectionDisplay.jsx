@@ -80,7 +80,7 @@ const ConnectionDisplay = (props) => {
                 <Link to={`/connection/edit/${id}`}>
                     <button className='submitBtn'>Edit Connection</button>
                 </Link>
-                <button data-id={oneConnection._id} onClick={deleteHandler}>Delete</button>
+                <button data-id={oneConnection._id} onClick={deleteHandler} className='deleteBtn'>Delete</button>
             </div>
             
         </>
