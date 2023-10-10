@@ -1,0 +1,72 @@
+h1{
+    color :rgb(250, 140, 158);
+    margin: 1vw;
+}
+.welcome{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 3vw;
+    padding: 5vw;
+}
+.welcomeBtn{
+    background-image: linear-gradient(to right, lightpink, rgb(250, 166, 81));
+    border-radius: 3vw;
+    color: white;
+}
+.welcomeBtn:hover{
+    color :rgb(40, 110, 153);
+    border-color: rgb(40, 110, 153);
+}
+.welcomeContainer{
+    display: flex;
+    align-items: center;
+}
+#shape-1, #shape-2, #shape-3{
+    position: absolute;
+    pointer-events: none;
+    opacity: 50%;
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50vw;
+    mix-blend-mode: multiply;
+    filter: blur(4vw);
+}
+#shape-1{
+    background-color: lavender;
+    top: 25vw;
+    left: 25vw;
+}
+#shape-2{
+    background-color: peachpuff;
+    right:5vw;
+    top: 3vw;
+    animation-delay: 1.5s;
+}
+#shape-3{
+    background-color: rgb(169, 220, 252);
+    left: 5vw;
+    top: 3vw;
+    animation-delay: 2s;
+}
+.scale-up-center{
+    animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+}
+@keyframes scale-up-center {
+    0%{
+        transform: translate(0vw, 0vw) scale(1);
+    }
+    33%{
+        transform: translate(7vw, -7vw) scale(1.2);
+    }
+    66%{
+        transform: translate(-5vw, 7vw) scale(0.9);
+    }
+    100%{
+        transform: translate(0vw, 0vw) scale(1);
+    }
+}
+.animation-delay-2000{
+    animation-delay: 1.5s;
+}
+.animation-delay-4000{
+    animation-delay: 2s;
+}

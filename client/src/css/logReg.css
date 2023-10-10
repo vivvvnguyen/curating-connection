@@ -1,0 +1,13 @@
+.logReg-column{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 3vw;
+    padding: 5vw;
+    margin: 3vw;
+}
+label{
+    color :grey;
+}
+.logRegBtnBar{
+    display: flex;
+    justify-content: space-evenly;
+}

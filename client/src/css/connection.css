@@ -1,0 +1,28 @@
+.connectionCreateFormBody{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 3vw;
+    padding: 5vw;
+    margin: 3vw;
+}
+.connectionDisplayBody{
+    display: flex;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 3vw;
+    padding: 3vw;
+    margin: 3vw;
+}
+.connectionDisplayCol{
+    margin: 2vw;
+}
+.connectionDisplayLabel{
+    font-size: 2.5vw;
+    color: grey;
+}
+.connectionDisplayInfo{
+    font-size: 1.5vw;
+    color :rgb(250, 140, 158);
+}
+.connectionDisplayFooter{
+    display: flex;
+    justify-content: space-evenly;
+}
