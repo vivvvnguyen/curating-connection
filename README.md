@@ -7,9 +7,11 @@ Simplify your gift-giving with a handy list of ideas and set reminders for impor
 -->
 
 ## Preview
-![Landing Page GIF](assets/LandingPage.gif)
-![Login and Registration GIF](assets/LoginReg.gif)
-![Dashboard](assets/Dashboard.png)
-![Connection Display](assets/ConnectionDisplay.png)
-![Connection Create](assets/ConnectionCreate.png)
-![Connection Edit](assets/ConnectionEdit.png)
+<div style="text-align: center;">
+    <img src="assets/LandingPage.gif" alt="Landing Page GIF" width=350 />
+    <img src="assets/LoginReg.gif" alt="Login and Registration GIF" width=350 />
+    <img src="assets/Dashboard.png" alt="Dashboard" width=350 />
+    <img src="assets/ConnectionDisplay.png" alt="Connection Display" width=350 />
+    <img src="assets/ConnectionCreate.png" alt="Connection Create" width=350 />
+    <img src="assets/ConnectionEdit.png" alt="Connection Edit" width=350 />
+</div>
