@@ -4,21 +4,21 @@
     margin: auto;
 }
 body{
-    background-image: linear-gradient(to bottom right, lightblue, lightpink);
+    background-image: linear-gradient(to bottom right, rgb(173, 216, 230), rgb(255, 182, 193));
 }
 .submitBtn{
-    background-image: linear-gradient(to right, lightpink, rgb(250, 166, 81));
+    background-image: linear-gradient(to right, rgb(255, 182, 193), rgb(250, 166, 81));
     border-radius: 3vw;
-    color:white;
+    color:rgb(255, 255, 255);
 }
 .submitBtn:hover{
     color :rgb(40, 110, 153);
     border-color: rgb(40, 110, 153);
 }
 .backBtn{
-    background-image: linear-gradient(to right, lightblue, lightskyblue);
+    background-image: linear-gradient(to right, rgb(173, 216, 230), rgb(135, 206, 250));
     border-radius: 3vw;
-    color: white
+    color: rgb(255, 255, 255)
 }
 .backBtn:hover{
     color :rgb(40, 110, 153);
@@ -28,7 +28,7 @@ body{
     background-color:  rgb(193, 176, 176);
     border-radius: 1vw;
     width: 15vw;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.5vw;
 }
 .logoutBtn:hover{
@@ -38,7 +38,7 @@ body{
 .deleteBtn{
     background-color: rgb(251, 91, 91);
     border-radius: 3vw;
-    color:white;
+    color:rgb(255, 255, 255);
 }
 .deleteBtn:hover{
     color :rgb(153, 40, 40);

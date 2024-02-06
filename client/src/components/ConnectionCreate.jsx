@@ -116,7 +116,7 @@ const ConnectionCreate = ({allConnections, setAllConnections, allCategories, set
                                 }) 
                             }
                         </select>
-                    </div>
+                </div>
                     <button className='submitBtn'>Register</button>
                 </div>
             </form>

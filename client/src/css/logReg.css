@@ -5,7 +5,7 @@
     margin: 3vw;
 }
 label{
-    color :grey;
+    color :rgb(128, 128, 128);
 }
 .logRegBtnBar{
     display: flex;

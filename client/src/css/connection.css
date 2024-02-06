@@ -16,7 +16,7 @@
 }
 .connectionDisplayLabel{
     font-size: 2.5vw;
-    color: grey;
+    color: rgb(128, 128, 128);
 }
 .connectionDisplayInfo{
     font-size: 1.5vw;

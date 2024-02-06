@@ -1,11 +1,13 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios, { all } from 'axios';
 import '../css/dashboard.css';
 import '../css/global.css';
 
-const Dashboard = (props) => {
-    const{allCategories, setAllCategories, allUsers, setAllUsers} = props;
+const Dashboard = ({allCategories, setAllCategories, allUsers, setAllUsers}) => {
+    // const{allCategories, setAllCategories, allUsers, setAllUsers} = props;
+    const [name, setName] = useState("");
+    const [errors, setErrors] = useState([]);
     const navigate = useNavigate();
     // const deleteHandler = e => {
     //     const id = e.target.id;
@@ -26,7 +28,7 @@ const Dashboard = (props) => {
                 console.error("Logout Failed", err);
             })
         
-    }
+    };
     useEffect(() => {
         axios.get("http://localhost:8000/api/categories")
             .then(res => {
@@ -36,7 +38,33 @@ const Dashboard = (props) => {
             .catch(err => {
                 console.log(err);
             })
-    },[])
+    },[]);
+    function toggleForm(e){
+        e.preventDefault();
+        var form = document.getElementById("newCategoryForm");
+        form.classList.toggle("visible");
+    };
+    const newCategoryHandler = e => {
+        e.preventDefault();
+        const newCategory = {
+            name
+        };
+        axios.post("http://localhost:8000/api/categories", newCategory)
+            .then(res => {
+                setAllCategories([...allCategories, res.data]);
+                console.log(res.data);
+                // navigate('/dashboard');
+                console.log(allCategories);
+            })
+            .catch(err => {
+                const errArray = [];
+                for (const key of Object.keys(err.response.data.errors)){
+                    errArray.push(err.response.data.errors[key].message)
+                };
+                setErrors(errArray);
+            })
+        console.log(allCategories)
+    };
     return(
         <div>
             <div>
@@ -94,6 +122,16 @@ const Dashboard = (props) => {
                         )
                     })
                 }
+                {/* <button className='dashboardCreateCategoryBtn' onClick={toggleForm}>Create Category</button>
+                <div className='dashboardCreateCategoryContainer' id='newCategoryForm'>
+                    <form onSubmit={newCategoryHandler}>
+                        <div>
+                            <label>Category Name</label>
+                            <input type='text' value={name} onChange={e => setName(e.target.value)}/>
+                        </div>
+                        <button className='submitBtn' type='submit'>Create</button>
+                    </form>
+                </div> */}
             </div>
             <div className='dashboardFooter'>
                 <button className='logoutBtn' onClick={handleLogout}>Logout</button>
