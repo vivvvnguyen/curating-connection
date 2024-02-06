@@ -10,7 +10,7 @@ Simplify your gift-giving with a handy list of ideas and set reminders for impor
 <div style="text-align: center;">
     <img src="assets/LandingPage.gif" alt="Landing Page GIF" width=400 />
     <img src="assets/LoginReg.gif" alt="Login and Registration GIF" width=400 />
-    <img src="assets/Dashboard.png" alt="Dashboard" width=425 />
+    <img src="assets/Dashboard.png" alt="Dashboard" width=400 />
     <img src="assets/ConnectionDisplay.png" alt="Connection Display" width=400 />
     <img src="assets/ConnectionCreate.png" alt="Connection Create" width=400 />
     <img src="assets/ConnectionEdit.png" alt="Connection Edit" width=400 />
